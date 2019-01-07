@@ -1,0 +1,26 @@
+{
+    "name": "Roblox Stumble Upon Games",
+    "version": "1.0",
+    "description": "Explore the world of Roblox one stumble at a time",
+    "permissions": ["storage", "https://*.roblox.com/"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "images/stumble-upon-16.png",
+        "32": "images/stumble-upon-32.png",
+        "48": "images/stumble-upon-48.png",
+        "128": "images/stumble-upon-128.png"
+    },
+    "browser_action": {
+        "default_popup" : "popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches": ["https://www.roblox.com/games/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "manifest_version": 2
+}

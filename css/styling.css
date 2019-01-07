@@ -1,0 +1,122 @@
+
+/* General Formatting and Styling for Any Theme */
+
+@keyframes jiggle {
+  15%, 35% {
+    transform: scale(1.0, 1.0)
+  }
+  20% {
+    transform: scale(1.05, 0.95)
+  }
+  25% {
+    transform: scale(0.95, 1.05) translate(0, -3px)
+  }
+  30% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
+}
+
+body {      
+  height: 80px;
+}
+
+button {
+  height: 30px;
+  width: 150px;
+  outline: none;
+  color: #ffffff;
+  margin-top: 3px;
+  border: none;
+  border-radius: 6px;  
+  transition: 0.3s;      
+}
+button:hover{
+  cursor: pointer;
+}
+
+select {
+  height: 30px;
+  width: 150px;    
+  border: none;
+  text-align-last: center;
+}
+
+button#showMetrics {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+button#useGenre {
+  width: 110px;
+  animation: jiggle 3s infinite ease-in;
+}
+
+.side {  margin-top: 5px; float: left;}
+.side + .side {  margin-left: 10px;}
+
+.stat {  height: 15px; font-size: 1.2em; padding: 5px; }
+
+.button-section{
+  margin-top: 6px;
+  overflow: auto;
+}
+#metrics-section{
+  display: none;
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+#metrics-section p {
+  line-height: 9px;
+  margin: 0px;
+  display: inline;
+}
+
+
+/* Dark Theme */
+
+body.dark { background-color: #232527; }
+
+.dark button { background-color: #494b4d; }
+
+
+.dark select {
+  background-color: #494b4d;
+  color: #ffffff;
+}
+
+.dark button#showMetrics:hover{  background-color: #393B3D; }
+
+.dark button#useGenre { background-color: #00B06F; }
+
+.dark button#useGenre:hover { background-color: #00925c; }
+
+.dark button#showMetrics { color: #ffffff; }
+
+.dark #metrics-section { color: #ffffff; }
+
+
+/* Classic Theme */
+
+body.classic { background-color: #E3E3E3; }
+
+.classic button { background-color: #ffffff; }
+
+.classic select {
+  background-color: #ffffff;
+  color: #191919;
+}
+
+.classic button#showMetrics {
+  color: #ffffff;
+  background-color: #00A2FF;
+}
+
+.classic button#showMetrics:hover{ background-color: #0074BD; }
+
+.classic button#useGenre { background-color: #00B06F; }
+
+.classic button#useGenre:hover { background-color: #00925c; }
+
+.light #metrics-section { color: #191919;}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="css/styling.css">
+    </head>
+    <body>
+      <!--<button id="useDefault" value="default">Use Default</button>-->
+      <select id="genre">
+          <option value="Default" selected="selected">Default</option>
+          <option value="Building">Building</option>
+          <option value="Horror">Horror</option>
+          <option value="Town and City">Town and City</option>
+          <option value="Military">Military</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Medieval">Medieval</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Naval">Naval</option>
+          <option value="FPS">FPS</option>
+          <option value="RPG">RPG</option>
+          <option value="Sports">Sports</option>
+          <option value="Fighting">Fighting</option>
+          <option value="Western">Western</option>
+      </select>
+      <div class="button-section">
+        <button class="side" id="useGenre" value="genre">Let's Play</button>
+        <button class="side" id="showMetrics">&#9660;</button>
+      </div>
+      <div id="metrics-section">
+          <div class="stat">
+            <p>Total Stumbles: </p><p id="stumble-count"></p>
+          </div>
+          <div class="stat">
+            <p>Total Plays: </p><p id="play-count"></p>
+          </div>
+          <div class="stat">
+            <p>Current Stumbles: </p><p id="current-count"></p>
+          </div>
+          <div class="stat">
+            <p>Avg. Stumbles per Play: </p><p id="stumbles-per-play-count"></p>
+          </div>
+      </div>      
+      <script src="popup.js"></script>
+    </body>
+  </html>
